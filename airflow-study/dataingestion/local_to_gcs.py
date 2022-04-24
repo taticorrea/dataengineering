@@ -18,8 +18,6 @@ tabela_name = 'tabela.csv'
 credentials_path = path_airflow_study + 'ivory-being-348021-7400d9333b88.json'
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 
-
-
 '''
 #salvar na GCS
 def _salva_GCS(ti): 
