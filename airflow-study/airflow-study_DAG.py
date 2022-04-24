@@ -78,7 +78,11 @@ def _cria_consulta_sqlite():
 
 
 with DAG(
+<<<<<<< HEAD
         'airflow-study_DAG',       
+=======
+        'airflow-study_DAG',
+>>>>>>> 18f850efb19c2cbc27493903d045b5c949fad274
         start_date = datetime(2022, 4,22),
         schedule_interval = '@daily'
         ) as dag:
@@ -100,6 +104,11 @@ with DAG(
         task_id = 'salva_GCP',
         python_callable = _salva_GCP
     )
+<<<<<<< HEAD
     '''
 cria_consulta_sqlite >> upload_gcs
 #cria_consulta_sqlite
+=======
+
+    consulta_sqlite >> salva_GCP
+>>>>>>> 18f850efb19c2cbc27493903d045b5c949fad274
