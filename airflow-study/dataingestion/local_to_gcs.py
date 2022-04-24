@@ -10,12 +10,12 @@ import os
 
 #from google.cloud import storage
 
-path_airflow_study = '/home/tatiane/dataengineering-study/airflow-study/'
+path_airflow_study = '/home/tatiane/dataengineering-study/airflow-study/dataingestion'
 database_name = 'airflow-study.db'
-tabela_name = 'tabela_airflow-study.csv'
+tabela_name = 'tabela.csv'
 
 #credenciais gcs
-credentials_path = '/home/tatiane/airflow/dags/ivory-being-348021-7400d9333b88.json'
+credentials_path = path_airflow_study + 'ivory-being-348021-7400d9333b88.json'
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 
 
@@ -100,4 +100,4 @@ with DAG(
         python_callable = _salva_GCP
     )
     '''
-cria_consulta_sqlite >> upload_gcs
+cria_consulta_sqlite >> upload_gcs  
