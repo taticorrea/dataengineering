@@ -73,7 +73,6 @@ def _cria_consulta_sqlite():
     
     return tabela_name
 
-
 with DAG(
         'airflow-study_DAG',       
         start_date = datetime(2022, 4,22),
