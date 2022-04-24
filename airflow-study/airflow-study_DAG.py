@@ -42,7 +42,6 @@ def _consulta_sqlite():
 
 with DAG(
         'airflow-study_DAG',
-       
         start_date = datetime(2022, 4,22),
         schedule_interval = '@daily'
         ) as dag:
