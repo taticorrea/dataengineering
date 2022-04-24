@@ -27,8 +27,10 @@ def e_valido(ti):
         return 'valido'
     return 'nao_valido'
 
-with DAG(dag_id = 'tutorial_dag', start_date = datetime(2022,4,19),
-          schedule_interval = '30 * * * *', catchup = False) as dag:
+with DAG(dag_id = 'tutorial_dag', 
+         start_date = datetime(2022,4,19),
+         schedule_interval = '30 * * * *',
+         catchup = False) as dag:
 
     #task1 (capturar dados)
     captura_conta_dados = PythonOperator(
