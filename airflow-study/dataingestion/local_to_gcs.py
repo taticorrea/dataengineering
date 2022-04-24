@@ -92,9 +92,9 @@ with DAG(
 
     )
     '''
-    salva_GCP = PythonOperator(
-        task_id = 'salva_GCP',
-        python_callable = _salva_GCP
+    salva_GCS = PythonOperator(
+        task_id = 'salva_GCS',
+        python_callable = _salva_GCS
     )
     '''
 cria_consulta_sqlite >> upload_gcs  
