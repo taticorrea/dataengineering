@@ -57,7 +57,7 @@ def _cria_consulta_sqlite():
     
     #inserindo registros
     sql_insert = 'INSERT OR IGNORE INTO teste values (?, ?, ?)'
-    
+
     for rec in row:
         cur.execute(sql_insert, rec)
 
@@ -65,7 +65,7 @@ def _cria_consulta_sqlite():
     
     #pegando tabela teste
     tabelas = pd.read_sql_query('SELECT NAME AS name FROM sqlite_master WHERE type = "table"', conn)
-    param = tabelas['name'][0] #tabela contacts
+    param = tabelas['name'][0]
     
     #query
     query = 'SELECT * FROM {}'.format(param)
