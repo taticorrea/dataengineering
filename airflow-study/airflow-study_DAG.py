@@ -101,4 +101,3 @@ with DAG(
     )
     '''
 cria_consulta_sqlite >> upload_gcs
-#cria_consulta_sqlite
