@@ -15,13 +15,13 @@ database_name = 'airflow-study.db'
 tabela_name = 'tabela.csv'
 
 #credenciais gcs
-credentials_path = path_airflow_study + 'ivory-being-348021-7400d9333b88.json'
+credentials_path = path_airflow_study + 'credential.json'
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 
 '''
 #salvar na GCS
 def _salva_GCS(ti): 
-    credentials_path = '/home/tatiane/airflow/dags/ivory-being-348021-7400d9333b88.json'
+    credentials_path = '/home/tatiane/airflow/dags/credential.json'
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 
     filename = ti.xcom_pull(task_ids = 'consulta_sqlite')
