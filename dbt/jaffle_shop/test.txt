@@ -1,0 +1,68 @@
+Qua 19 Out 2022 16:31:22 -03
+[0m19:31:29  Running with dbt=1.2.1
+[0m19:31:29  Found 6 models, 7 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[0m19:31:29  
+[0m19:31:33  Concurrency: 1 threads (target='dev')
+[0m19:31:33  
+[0m19:31:33  1 of 1 START table model jaffle_shop_dbt.fct_orders ............................ [RUN]
+[0m19:31:37  1 of 1 OK created table model jaffle_shop_dbt.fct_orders ....................... [[32mOK[0m in 4.65s]
+[0m19:31:39  
+[0m19:31:39  Finished running 1 table model in 0 hours 0 minutes and 10.22 seconds (10.22s).
+[0m19:31:39  
+[0m19:31:39  [32mCompleted successfully[0m
+[0m19:31:39  
+[0m19:31:39  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+Qua 19 Out 2022 16:31:40 -03
+Qua 19 Out 2022 16:32:44 -03
+[0m19:32:52  Running with dbt=1.2.1
+[0m19:32:53  Encountered an error:
+Compilation Error in model fct_orders (models/marts/core/fct_orders.sql)
+  Model 'model.jaffle_shop.fct_orders' (models/marts/core/fct_orders.sql) depends on a node named 'stg_paymen' which was not found
+[0m19:32:53  Traceback (most recent call last):
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/task/runnable.py", line 451, in run
+    self._runtime_initialize()
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/task/runnable.py", line 159, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/task/runnable.py", line 92, in _runtime_initialize
+    self.load_manifest()
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/task/runnable.py", line 81, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/parser/manifest.py", line 219, in get_full_manifest
+    manifest = loader.load()
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/parser/manifest.py", line 391, in load
+    self.process_refs(self.root_project.project_name)
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/parser/manifest.py", line 830, in process_refs
+    _process_refs_for_node(self.manifest, current_project, node)
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/parser/manifest.py", line 1230, in _process_refs_for_node
+    invalid_ref_fail_unless_test(
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/parser/manifest.py", line 939, in invalid_ref_fail_unless_test
+    ref_target_not_found(
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/exceptions.py", line 631, in ref_target_not_found
+    raise_compiler_error(msg, model)
+  File "/Users/tcsilva/.virtualenvs/dbt/lib/python3.9/site-packages/dbt/exceptions.py", line 445, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model fct_orders (models/marts/core/fct_orders.sql)
+  Model 'model.jaffle_shop.fct_orders' (models/marts/core/fct_orders.sql) depends on a node named 'stg_paymen' which was not found
+
+Qua 19 Out 2022 16:32:53 -03
+Qua 19 Out 2022 16:33:34 -03
+[0m19:33:41  Running with dbt=1.2.1
+[0m19:33:41  Found 6 models, 7 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[0m19:33:41  
+[0m19:33:45  Concurrency: 1 threads (target='dev')
+[0m19:33:45  
+[0m19:33:45  1 of 1 START table model jaffle_shop_dbt.fct_orders ............................ [RUN]
+[0m19:33:50  1 of 1 OK created table model jaffle_shop_dbt.fct_orders ....................... [[32mOK[0m in 5.62s]
+[0m19:33:52  
+[0m19:33:52  Finished running 1 table model in 0 hours 0 minutes and 10.66 seconds (10.66s).
+[0m19:33:52  
+[0m19:33:52  [32mCompleted successfully[0m
+[0m19:33:52  
+[0m19:33:52  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+Qua 19 Out 2022 16:33:53 -03
