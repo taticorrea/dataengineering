@@ -1,0 +1,261 @@
+
+
+============================== 2022-10-11 20:08:13.514605 | 7c735581-2d6a-415c-82fb-7ff4422f0af4 ==============================
+[0m20:08:13.514781 [info ] [MainThread]: Running with dbt=1.2.1
+[0m20:08:13.516014 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/tcsilva/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m20:08:13.516476 [debug] [MainThread]: Tracking: tracking
+[0m20:08:13.543206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114386940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114386a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1143865b0>]}
+[0m20:08:13.576819 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+[0m20:08:13.577602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7c735581-2d6a-415c-82fb-7ff4422f0af4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1143d7670>]}
+[0m20:08:13.648473 [debug] [MainThread]: Parsing macros/statement.sql
+[0m20:08:13.652848 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m20:08:13.656500 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m20:08:13.689362 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+[0m20:08:13.701805 [debug] [MainThread]: Parsing macros/materializations/view.sql
+[0m20:08:13.703022 [debug] [MainThread]: Parsing macros/materializations/table.sql
+[0m20:08:13.708005 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+[0m20:08:13.736308 [debug] [MainThread]: Parsing macros/materializations/incremental/incremental.sql
+[0m20:08:13.744536 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m20:08:13.805671 [debug] [MainThread]: Parsing macros/apply_grants.sql
+[0m20:08:13.810282 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+[0m20:08:13.823956 [debug] [MainThread]: Parsing macros/materializations/view.sql
+[0m20:08:13.825554 [debug] [MainThread]: Parsing macros/materializations/table.sql
+[0m20:08:13.832959 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+[0m20:08:13.865292 [debug] [MainThread]: Parsing macros/materializations/incremental/validate.sql
+[0m20:08:13.871842 [debug] [MainThread]: Parsing macros/materializations/incremental/strategies.sql
+[0m20:08:13.887053 [debug] [MainThread]: Parsing macros/materializations/incremental/incremental.sql
+[0m20:08:13.898586 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m20:08:13.899905 [debug] [MainThread]: Parsing macros/utils/assert_not_null.sql
+[0m20:08:13.902031 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m20:08:13.910348 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m20:08:13.914197 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m20:08:13.939115 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m20:08:13.940334 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m20:08:13.941600 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m20:08:13.945277 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m20:08:13.952269 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m20:08:13.955935 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m20:08:13.958196 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m20:08:13.988792 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m20:08:14.004782 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m20:08:14.022225 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m20:08:14.032421 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m20:08:14.035581 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m20:08:14.037770 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m20:08:14.045213 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m20:08:14.066082 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m20:08:14.067729 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m20:08:14.085100 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m20:08:14.104820 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m20:08:14.112236 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m20:08:14.115613 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m20:08:14.124225 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m20:08:14.127733 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m20:08:14.134195 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m20:08:14.136785 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m20:08:14.146572 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m20:08:14.170628 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m20:08:14.173529 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m20:08:14.179193 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m20:08:14.182104 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m20:08:14.183648 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m20:08:14.185012 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m20:08:14.185790 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m20:08:14.187305 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m20:08:14.193758 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m20:08:14.203303 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m20:08:14.204691 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m20:08:14.206377 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m20:08:14.207682 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m20:08:14.209575 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m20:08:14.211606 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m20:08:14.212743 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m20:08:14.214293 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m20:08:14.215584 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m20:08:14.218748 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m20:08:14.221189 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m20:08:14.223258 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m20:08:14.226184 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m20:08:14.229015 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m20:08:14.231150 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m20:08:14.233043 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m20:08:14.234510 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m20:08:14.241043 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m20:08:14.242715 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m20:08:14.245698 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m20:08:14.247983 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m20:08:14.249125 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m20:08:14.251702 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m20:08:14.255136 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m20:08:14.275257 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m20:08:14.279634 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m20:08:14.302186 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m20:08:14.309448 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m20:08:14.317916 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m20:08:14.336946 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m20:08:14.837677 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m20:08:14.853185 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m20:08:14.933992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7c735581-2d6a-415c-82fb-7ff4422f0af4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1145150d0>]}
+[0m20:08:14.942972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7c735581-2d6a-415c-82fb-7ff4422f0af4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144f1310>]}
+[0m20:08:14.943614 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m20:08:14.944039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7c735581-2d6a-415c-82fb-7ff4422f0af4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11437fac0>]}
+[0m20:08:14.945778 [info ] [MainThread]: 
+[0m20:08:14.946424 [debug] [MainThread]: Acquiring new databricks connection "master"
+[0m20:08:14.947251 [debug] [ThreadPool]: Acquiring new databricks connection "list_schemas"
+[0m20:08:14.957649 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+[0m20:08:14.957979 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.2.1", "dbt_databricks_version": "1.2.3", "databricks_sql_connector_version": "2.0.5", "profile_name": "dbt_demo", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m20:08:14.958234 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:08:17.691231 [debug] [ThreadPool]: SQL status: OK in 2.73 seconds
+[0m20:08:17.698577 [debug] [ThreadPool]: On list_schemas: Close
+[0m20:08:18.272319 [debug] [ThreadPool]: Acquiring new databricks connection "create__schema_dbt"
+[0m20:08:18.273226 [debug] [ThreadPool]: Acquiring new databricks connection "create__schema_dbt"
+[0m20:08:18.273903 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database=None, schema='schema_dbt', identifier=None)"
+[0m20:08:18.281282 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m20:08:18.281590 [debug] [ThreadPool]: Using databricks connection "create__schema_dbt"
+[0m20:08:18.281766 [debug] [ThreadPool]: On create__schema_dbt: /* {"app": "dbt", "dbt_version": "1.2.1", "dbt_databricks_version": "1.2.3", "databricks_sql_connector_version": "2.0.5", "profile_name": "dbt_demo", "target_name": "dev", "connection_name": "create__schema_dbt"} */
+create schema if not exists schema_dbt
+  
+[0m20:08:18.282007 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:08:20.090951 [debug] [ThreadPool]: SQL status: OK in 1.81 seconds
+[0m20:08:20.092144 [debug] [ThreadPool]: Spark adapter: NotImplemented: commit
+[0m20:08:20.092655 [debug] [ThreadPool]: On create__schema_dbt: ROLLBACK
+[0m20:08:20.092898 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m20:08:20.093046 [debug] [ThreadPool]: On create__schema_dbt: Close
+[0m20:08:20.670313 [debug] [ThreadPool]: Acquiring new databricks connection "list_None_schema_dbt"
+[0m20:08:20.681129 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m20:08:20.681477 [debug] [ThreadPool]: Using databricks connection "list_None_schema_dbt"
+[0m20:08:20.681768 [debug] [ThreadPool]: On list_None_schema_dbt: /* {"app": "dbt", "dbt_version": "1.2.1", "dbt_databricks_version": "1.2.3", "databricks_sql_connector_version": "2.0.5", "profile_name": "dbt_demo", "target_name": "dev", "connection_name": "list_None_schema_dbt"} */
+show table extended in schema_dbt like '*'
+  
+[0m20:08:20.681956 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:08:22.316940 [debug] [ThreadPool]: SQL status: OK in 1.63 seconds
+[0m20:08:22.321507 [debug] [ThreadPool]: On list_None_schema_dbt: ROLLBACK
+[0m20:08:22.321998 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m20:08:22.322574 [debug] [ThreadPool]: On list_None_schema_dbt: Close
+[0m20:08:22.777284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7c735581-2d6a-415c-82fb-7ff4422f0af4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1145199a0>]}
+[0m20:08:22.777775 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m20:08:22.778014 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m20:08:22.778669 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:08:22.779173 [info ] [MainThread]: 
+[0m20:08:22.785894 [debug] [Thread-1  ]: Began running node model.dbt_demo.my_first_dbt_model
+[0m20:08:22.786581 [info ] [Thread-1  ]: 1 of 2 START table model schema_dbt.my_first_dbt_model ......................... [RUN]
+[0m20:08:22.787466 [debug] [Thread-1  ]: Acquiring new databricks connection "model.dbt_demo.my_first_dbt_model"
+[0m20:08:22.787917 [debug] [Thread-1  ]: Began compiling node model.dbt_demo.my_first_dbt_model
+[0m20:08:22.788498 [debug] [Thread-1  ]: Compiling model.dbt_demo.my_first_dbt_model
+[0m20:08:22.792519 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_demo.my_first_dbt_model"
+[0m20:08:22.793268 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:08:22.793473 [debug] [Thread-1  ]: Began executing node model.dbt_demo.my_first_dbt_model
+[0m20:08:22.872536 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_demo.my_first_dbt_model"
+[0m20:08:22.873714 [debug] [Thread-1  ]: Spark adapter: NotImplemented: add_begin_query
+[0m20:08:22.874103 [debug] [Thread-1  ]: Using databricks connection "model.dbt_demo.my_first_dbt_model"
+[0m20:08:22.874475 [debug] [Thread-1  ]: On model.dbt_demo.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.1", "dbt_databricks_version": "1.2.3", "databricks_sql_connector_version": "2.0.5", "profile_name": "dbt_demo", "target_name": "dev", "node_id": "model.dbt_demo.my_first_dbt_model"} */
+
+      create or replace table schema_dbt.my_first_dbt_model
+    
+    
+    using delta
+    
+    
+    
+    
+    
+    
+    as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+[0m20:08:22.874758 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:08:43.540364 [debug] [Thread-1  ]: SQL status: OK in 20.67 seconds
+[0m20:08:44.028158 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:08:44.028460 [debug] [Thread-1  ]: On model.dbt_demo.my_first_dbt_model: ROLLBACK
+[0m20:08:44.028627 [debug] [Thread-1  ]: Databricks adapter: NotImplemented: rollback
+[0m20:08:44.028753 [debug] [Thread-1  ]: On model.dbt_demo.my_first_dbt_model: Close
+[0m20:08:44.502790 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c735581-2d6a-415c-82fb-7ff4422f0af4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1146bffd0>]}
+[0m20:08:44.503302 [info ] [Thread-1  ]: 1 of 2 OK created table model schema_dbt.my_first_dbt_model .................... [[32mOK[0m in 21.72s]
+[0m20:08:44.503772 [debug] [Thread-1  ]: Finished running node model.dbt_demo.my_first_dbt_model
+[0m20:08:44.504472 [debug] [Thread-1  ]: Began running node model.dbt_demo.my_second_dbt_model
+[0m20:08:44.505151 [info ] [Thread-1  ]: 2 of 2 START view model schema_dbt.my_second_dbt_model ......................... [RUN]
+[0m20:08:44.506014 [debug] [Thread-1  ]: Acquiring new databricks connection "model.dbt_demo.my_second_dbt_model"
+[0m20:08:44.506234 [debug] [Thread-1  ]: Began compiling node model.dbt_demo.my_second_dbt_model
+[0m20:08:44.506406 [debug] [Thread-1  ]: Compiling model.dbt_demo.my_second_dbt_model
+[0m20:08:44.509394 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_demo.my_second_dbt_model"
+[0m20:08:44.509899 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:08:44.510078 [debug] [Thread-1  ]: Began executing node model.dbt_demo.my_second_dbt_model
+[0m20:08:44.531403 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_demo.my_second_dbt_model"
+[0m20:08:44.531989 [debug] [Thread-1  ]: Spark adapter: NotImplemented: add_begin_query
+[0m20:08:44.532174 [debug] [Thread-1  ]: Using databricks connection "model.dbt_demo.my_second_dbt_model"
+[0m20:08:44.532305 [debug] [Thread-1  ]: On model.dbt_demo.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.1", "dbt_databricks_version": "1.2.3", "databricks_sql_connector_version": "2.0.5", "profile_name": "dbt_demo", "target_name": "dev", "node_id": "model.dbt_demo.my_second_dbt_model"} */
+create or replace view schema_dbt.my_second_dbt_model
+  
+  
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from schema_dbt.my_first_dbt_model
+where id = 1
+
+[0m20:08:44.532428 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:08:45.952325 [debug] [Thread-1  ]: SQL status: OK in 1.42 seconds
+[0m20:08:45.954717 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:08:45.955091 [debug] [Thread-1  ]: On model.dbt_demo.my_second_dbt_model: ROLLBACK
+[0m20:08:45.955410 [debug] [Thread-1  ]: Databricks adapter: NotImplemented: rollback
+[0m20:08:45.955631 [debug] [Thread-1  ]: On model.dbt_demo.my_second_dbt_model: Close
+[0m20:08:46.420376 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c735581-2d6a-415c-82fb-7ff4422f0af4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114699730>]}
+[0m20:08:46.420954 [info ] [Thread-1  ]: 2 of 2 OK created view model schema_dbt.my_second_dbt_model .................... [[32mOK[0m in 1.91s]
+[0m20:08:46.421616 [debug] [Thread-1  ]: Finished running node model.dbt_demo.my_second_dbt_model
+[0m20:08:46.423279 [debug] [MainThread]: Acquiring new databricks connection "master"
+[0m20:08:46.423612 [debug] [MainThread]: On master: ROLLBACK
+[0m20:08:46.423765 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:08:46.899872 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m20:08:46.900156 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m20:08:46.900314 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m20:08:46.900481 [debug] [MainThread]: On master: ROLLBACK
+[0m20:08:46.900607 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m20:08:46.900728 [debug] [MainThread]: On master: Close
+[0m20:08:47.360160 [info ] [MainThread]: 
+[0m20:08:47.372309 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 32.41 seconds (32.41s).
+[0m20:08:47.372886 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:08:47.373163 [debug] [MainThread]: Connection 'model.dbt_demo.my_second_dbt_model' was properly closed.
+[0m20:08:47.401559 [info ] [MainThread]: 
+[0m20:08:47.401939 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:08:47.402251 [info ] [MainThread]: 
+[0m20:08:47.402511 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m20:08:47.403057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114586b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114519e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114713640>]}
+[0m20:08:47.403575 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-13 14:20:15.603874 | 7d7bfe25-4895-418e-a471-26183fdfa973 ==============================
+[0m14:20:15.603886 [info ] [MainThread]: Running with dbt=1.2.1
+[0m14:20:15.604436 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/tcsilva/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m14:20:15.604852 [debug] [MainThread]: Tracking: tracking
+[0m14:20:15.621506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a4cca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a4ce20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a4cdc0>]}
+[0m14:20:15.624205 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m14:20:15.625200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a4ce20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a4cdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a4cf10>]}
+[0m14:20:15.625884 [debug] [MainThread]: Flushing usage events
