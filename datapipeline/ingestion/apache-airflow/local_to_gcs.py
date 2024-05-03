@@ -10,7 +10,7 @@ import os
 
 #from google.cloud import storage
 
-path_airflow_study = '/home/tatiane/dataengineering-study/airflow-study/dataingestion'
+path_airflow_study = '/home/tatiane/dataengineering-study/apache-airflow/'
 database_name = 'airflow-study.db'
 tabela_name = 'tabela.csv'
 
