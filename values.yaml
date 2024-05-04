@@ -62,7 +62,7 @@ containerLifecycleHooks: {}
 
 # Airflow home directory
 # Used for mount paths
-airflowHome: /airflow-minikube
+airflowHome: /opt/airflow
 
 # Default airflow repository -- overridden by all the specific images below
 defaultAirflowRepository: apache/airflow
