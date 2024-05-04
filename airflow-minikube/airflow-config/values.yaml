@@ -2452,7 +2452,30 @@ dags:
     ## optional subpath for dag volume mount
     subPath: ~
   gitSync:
-    enabled: false
+    enabled: true
+    repo: https://github.com/taticorrea/dataengineering.git
+    branch: main
+    rev: HEAD
+    depth: 1
+    # interval between git sync attempts in seconds
+    # high values are more likely to cause DAGs to become out of sync between different components
+    # low values cause more traffic to the remote git repository
+    wait: 5
+    containerName: git-sync
+    uid: 65533
+    securityContext: {}
+    securityContexts:
+      container: {}
+    containerLifecycleHooks: {}
+    extraVolumeMounts: []
+    env: []
+    resources: {}
+    #  limits:
+    #   cpu: 100m
+    #   memory: 128Mi
+    #  requests:
+    #   cpu: 100m
+    #   memory: 128Mi
 
     # git repo clone url
     # ssh example: git@github.com:apache/airflow.git
