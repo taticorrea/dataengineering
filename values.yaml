@@ -2454,7 +2454,7 @@ dags:
   gitSync:
     enabled: true
     repo: https://github.com/taticorrea/dataengineering.git
-    branch: airflow-branch
+    branch: feat/airflow
     rev: HEAD
     depth: 1
     # interval between git sync attempts in seconds
