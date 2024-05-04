@@ -1,3 +1,0 @@
-packages:
-  - git: "git@github.com:taticorrea-unico/dbt-shared.git" # git URL
-    revision: main # tag or branch name
